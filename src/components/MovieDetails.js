@@ -66,10 +66,10 @@ export default function MovieDetails({
   useEffect(
     function () {
       if (!title) return;
-      document.title = `Movie | ${title}`;
+      document.title = `Filmy | ${title}`;
 
       return function () {
-        document.title = "Movies";
+        document.title = "Filmy";
       };
     },
     [title]
